@@ -1,57 +1,9 @@
 <searchbar isnavigator="{{true}}"></searchbar>
-<view class="module-group">
-  <view class="module-top">
-    <view class="module-title">电影</view>
-    <navigator class="module-more">更多</navigator>
-  </view>
-  <scroll-view class="module-scroll-view" scroll-x="{{true}}">
-    <navigator class="item-navigator">
-      <view class="item-group">
-        <view class="thumbnail-group">
-          <image class="thumbnail" src="https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2626693662.webp"></image>
-        </view>
-        <view class="item-title">一秒钟</view>
-      </view>
-    </navigator>
-    <navigator class="item-navigator">
-      <view class="item-group">
-        <view class="thumbnail-group">
-          <image class="thumbnail" src="https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2626693662.webp"></image>
-        </view>
-        <view class="item-title">一秒钟</view>
-      </view>
-    </navigator>
-    <navigator class="item-navigator">
-      <view class="item-group">
-        <view class="thumbnail-group">
-          <image class="thumbnail" src="https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2626693662.webp"></image>
-        </view>
-        <view class="item-title">一秒钟</view>
-      </view>
-    </navigator>
-    <navigator class="item-navigator">
-      <view class="item-group">
-        <view class="thumbnail-group">
-          <image class="thumbnail" src="https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2626693662.webp"></image>
-        </view>
-        <view class="item-title">一秒钟</view>
-      </view>
-    </navigator>
-    <navigator class="item-navigator">
-      <view class="item-group">
-        <view class="thumbnail-group">
-          <image class="thumbnail" src="https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2626693662.webp"></image>
-        </view>
-        <view class="item-title">一秒钟</view>
-      </view>
-    </navigator>
-    <navigator class="item-navigator">
-      <view class="item-group">
-        <view class="thumbnail-group">
-          <image class="thumbnail" src="https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2626693662.webp"></image>
-        </view>
-        <view class="item-title">一秒钟</view>
-      </view>
-    </navigator>
-  </scroll-view>
-</view>
+<!-- 电影 -->
+<indexmodule title="电影" items="{{movies}}"></indexmodule>
+
+<!-- 电视剧 -->
+<indexmodule title="电视剧" items="{{tvs}}"></indexmodule>
+
+<!-- 综艺 -->
+<indexmodule title="综艺" items="{{shows}}"></indexmodule>

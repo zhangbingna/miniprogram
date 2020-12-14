@@ -15,7 +15,43 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  onLoad: function (option) {
+    var that = this;
+    //电影
+    wx.request({
+      url: 'https://m.douban.com/rexxar/api/v2/subject_collection/movie_showing/items?count=7',
+      success:function(res){
+        var movies = res.data.subject_collection_items;
+        that.setData({
+          movies: movies
+        });
+        console.log(movies)
+      }
+    });
+
+    //电视剧
+    wx.request({
+      url: 'https://m.douban.com/rexxar/api/v2/subject_collection/tv_hot/items?count=7',
+      success:function(res){
+        var tvs = res.data.subject_collection_items;
+        that.setData({
+          tvs: tvs
+        });
+        console.log(tvs)
+      }
+    });
+    //综艺
+    wx.request({
+      url: 'https://m.douban.com/rexxar/api/v2/subject_collection/tv_variety_show/items?count=7',
+      success:function(res){
+        var shows = res.data.subject_collection_items;
+        that.setData({
+          shows: shows
+        });
+        console.log(shows)
+      }
+    });
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
